@@ -7,6 +7,7 @@
 	if ($time >= 6 && $time <12) {
 		$Txt = "Morgen!";
 		$bg = "B3W21O1_images/morning.png";
+		
 	}
 	//Middag
 	if ($time >=12 && $time <18) {
@@ -23,18 +24,19 @@
 		$Txt = "Nacht!";
 		$bg = "B3W21O1_images/night.png";
 	}
+
+		
 ?>
-
-
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Goede <?=$Txt?></title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="B3W21O1.css">
 </head>
-<body background="<?=$bg?>">
-	<h1>Goede <?=$Txt?></h1>
-	<h1>Het is nu <?=$time?></h1>
+<body>
+	<img src="<?=$bg?>">
+	<h1 class='title'>Goede <?=$Txt?></h1>
+	<h1 class='title'>Het is nu <?=$time?></h1>
+	
 </body>
 </html>
